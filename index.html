@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website for a Data Science master's student seeking full-time opportunities."
+    />
+    <title>Data Science Portfolio | Tzuchieh Chao</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient-bg" aria-hidden="true">
+      <span class="orb orb-a"></span>
+      <span class="orb orb-b"></span>
+      <span class="orb orb-c"></span>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="#home">Tzuchieh Chao</a>
+        <button class="menu-toggle" aria-label="Open navigation menu">☰</button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="reveal">
+            <p class="hero-badge">
+              <span class="badge-dot"></span>
+              Open to Full-Time Opportunities
+            </p>
+            <h1>
+              <span class="title-line">Turning Data Into</span>
+              <span class="title-line">Real-World Impact</span>
+            </h1>
+            <p class="hero-name">Tzuchieh Chao</p>
+            <p class="hero-typing">
+              <span id="typingText"></span><span class="typing-cursor">|</span>
+            </p>
+            <p class="lead">
+              I combine business strategy and data science to build machine
+              learning solutions with practical impact, technical rigor, and
+              deployment readiness.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-outline" href="assets/resume.pdf" target="_blank" rel="noopener"
+                >Download Resume</a
+              >
+            </div>
+            <div class="hero-social">
+              <a href="mailto:jeremy880524@gmail.com" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="https://github.com/jayChao2431" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/tzu-chieh-chao2431/"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <div class="hero-card reveal">
+            <h2>Professional Focus</h2>
+            <p class="hero-card-text">
+              Business and Data Science education background with practical
+              experience in Wearable Healthcare Technology and Strategic
+              Consulting.
+            </p>
+            <div class="focus-chips">
+              <span>Business Analyst</span>
+              <span>Data Scientist</span>
+              <span>Decision Scientist</span>
+              <span>Analytics Engineer</span>
+              <span>Solution Engineer</span>
+              <span>AI/ML Engineering</span>
+              <span>Data Engineer</span>
+            </div>
+            <div class="focus-details">
+              <div>
+                <p class="focus-label">Focus Areas</p>
+                <ul>
+                  <li>Machine Learning Deployment</li>
+                  <li>Business-Centered Analytics</li>
+                  <li>Healthcare Data Applications</li>
+                </ul>
+              </div>
+              <div>
+                <p class="focus-label">Open To</p>
+                <ul>
+                  <li>Full-Time Roles (2026)</li>
+                  <li>Cross-Functional Teams</li>
+                  <li>Product & Platform Collaboration</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="scroll-cue">Scroll to Explore</p>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container reveal">
+          <p class="section-kicker">Professional Profile</p>
+          <h2>About</h2>
+          <p>
+            I am Tzuchieh Chao, an M.S. candidate in Applied Data Science at
+            the University of Florida with a B.B.A. in Business Administration
+            from National Taipei University.
+            <br />
+            <br />
+            My profile is built on cross-disciplinary training and execution
+            across analytics, machine learning, and business strategy. I bring
+            together quantitative modeling, optimization, and decision-focused
+            communication to deliver solutions that are both technically sound
+            and operationally relevant. My recent work spans wearable
+            healthcare AI engineering and strategic consulting research at CDRI.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <p class="section-kicker">Selected Work</p>
+          <h2>Projects</h2>
+          <div class="project-grid">
+            <article class="card reveal">
+              <p class="project-icon"><i class="fa-solid fa-shirt" aria-hidden="true"></i></p>
+              <h3>AI-Powered Wardrobe Recommender</h3>
+              <p>
+                Built an intelligent fashion recommendation system using OpenAI
+                CLIP, ensemble classification, and explainable matching logic.
+                Improved categorization accuracy from a ResNet baseline to
+                73.47% with confidence-based validation.
+              </p>
+              <p class="tagline">Python · CLIP · Computer Vision</p>
+              <p class="outcome">Outcome: 73.47% classification accuracy with explainable recommendation logic.</p>
+              <a
+                href="https://github.com/jayChao2431/AI-Wardrobe-Assistant"
+                target="_blank"
+                rel="noopener"
+                >View Code</a
+              >
+            </article>
+            <article class="card reveal">
+              <p class="project-icon"><i class="fa-solid fa-camera-retro" aria-hidden="true"></i></p>
+              <h3>CIFAR-10 CNN Classifier with Gradio</h3>
+              <p>
+                Developed an interactive image classification app for CIFAR-10
+                using TensorFlow/Keras CNN architecture and Gradio UI. Achieved
+                strong model performance with 0.8686 accuracy and robust macro
+                F1 score.
+              </p>
+              <p class="tagline">TensorFlow · CNN · Gradio</p>
+              <p class="outcome">Outcome: 0.8686 accuracy and robust macro F1 in classroom benchmarking.</p>
+              <a
+                href="https://github.com/jayChao2431/Interactive-CNN-Based-CIFAR-10-Classification-System-using-Gradio"
+                target="_blank"
+                rel="noopener"
+                >View Code</a
+              >
+            </article>
+            <article class="card reveal">
+              <p class="project-icon"><i class="fa-solid fa-earth-asia" aria-hidden="true"></i></p>
+              <h3>G20 Climate-Economy ML Dashboard</h3>
+              <p>
+                Built regression and classification models to analyze
+                relationships among CO2 emissions, energy indicators, and GDP
+                across G20 countries. Delivered insights through an interactive
+                dashboard for scenario exploration.
+              </p>
+              <p class="tagline">Python · Scikit-learn · Dash/Streamlit</p>
+              <p class="outcome">Outcome: interactive policy and business scenario analysis for G20 sustainability trends.</p>
+              <a
+                href="https://github.com/jayChao2431/cap5771sp25-project"
+                target="_blank"
+                rel="noopener"
+                >View Code</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <p class="section-kicker">Core Capabilities</p>
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-group reveal">
+              <h3>Languages</h3>
+              <p>Python, SQL, R, C++, C</p>
+              <p class="skill-sub">Production scripting, data transformation, model prototyping.</p>
+            </div>
+            <div class="skill-group reveal">
+              <h3>ML & Data Engineering</h3>
+              <p>PyTorch, TensorFlow, ONNX Runtime, CoreML, TFLite</p>
+              <p class="skill-sub">Model training, optimization, deployment-oriented inference pipelines.</p>
+            </div>
+            <div class="skill-group reveal">
+              <h3>Business Analytics</h3>
+              <p>Business Analytics, Optimization, ESG/Net-Zero Analysis</p>
+              <p class="skill-sub">Decision support, strategic analysis, quantitative business framing.</p>
+            </div>
+            <div class="skill-group reveal">
+              <h3>Tools</h3>
+              <p>Power BI, Tableau, SPSS, Excel VBA, FastAPI, Docker</p>
+              <p class="skill-sub">Visualization, API integration, reproducible technical workflows.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="section section-alt">
+        <div class="container">
+          <p class="section-kicker">Experience Snapshot</p>
+          <h2>Resume</h2>
+          <p class="resume-intro">
+            Click each card to expand details, key coursework, and supporting
+            information.
+          </p>
+          <div class="resume-split">
+            <div class="resume-column reveal">
+              <h3>Education</h3>
+              <article class="resume-card">
+                <button class="expand-toggle" type="button" aria-expanded="false">
+                  <span>
+                    <span class="timeline-date">Aug 2024 - May 2026</span>
+                    <strong>M.S. in Applied Data Science, University of Florida</strong>
+                  </span>
+                  <span class="expand-icon">+</span>
+                </button>
+                <div class="expand-panel">
+                  <p>Achievement Award Scholarship. Gainesville, FL.</p>
+                  <p class="panel-title">Key Courses</p>
+                  <ul>
+                    <li>Information Theory</li>
+                    <li>Applied Machine Learning</li>
+                    <li>Applied Deep Learning</li>
+                    <li>Introduction to Data Science</li>
+                    <li>Mathematical Statistics</li>
+                    <li>Optimization</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="resume-card">
+                <button class="expand-toggle" type="button" aria-expanded="false">
+                  <span>
+                    <span class="timeline-date">Sep 2017 - Jan 2022</span>
+                    <strong>B.B.A. in Business Administration, National Taipei University</strong>
+                  </span>
+                  <span class="expand-icon">+</span>
+                </button>
+                <div class="expand-panel">
+                  <p>Taipei, Taiwan. Cross-disciplinary foundation in math, programming, and business insight.</p>
+                  <p class="panel-title">Key Courses (12)</p>
+                  <ul>
+                    <li>Calculus, Linear Algebra, Probability, Statistics</li>
+                    <li>Programming for Data Science (R), Data Structure, Object-Oriented Programming (C++)</li>
+                    <li>Python for Data Science and Artificial Intelligence</li>
+                    <li>Business Analytics, Economics, Financial Accounting, Operations Management</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="resume-column reveal">
+              <h3>Experience</h3>
+              <article class="resume-card">
+                <button class="expand-toggle" type="button" aria-expanded="false">
+                  <span>
+                    <span class="timeline-date">Aug 2025 - May 2026</span>
+                    <strong>AI/ML Engineer, UF IPPD × Aventusoft LLC</strong>
+                  </span>
+                  <span class="expand-icon">+</span>
+                </button>
+                <div class="expand-panel">
+                  <p>Gainesville & Boca Raton, FL.</p>
+                  <ul>
+                    <li>Defined system requirements, software architecture, and deployment constraints.</li>
+                    <li>Designed ONNX Runtime, CoreML, and TFLite inference pipelines.</li>
+                    <li>Built ECG preprocessing and arrhythmia modeling pipelines.</li>
+                    <li>Developed 1D U-Net delineation and benchmarked ECG-FM vs CNN-BiLSTM.</li>
+                    <li>Applied pruning and quantization for cloud/mobile inference efficiency.</li>
+                    <li>Supported FDA Design Control aligned documentation and validation communication.</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="resume-card">
+                <button class="expand-toggle" type="button" aria-expanded="false">
+                  <span>
+                    <span class="timeline-date">Feb 2023 - Jul 2023</span>
+                    <strong>Research Assistant, CDRI</strong>
+                  </span>
+                  <span class="expand-icon">+</span>
+                </button>
+                <div class="expand-panel">
+                  <p>Taipei, Taiwan.</p>
+                  <ul>
+                    <li>Analyzed ESG disclosures from 30 Fortune 500 companies for net-zero patterns.</li>
+                    <li>Built SWOT/PEST/BCG structured analyses for SME strategy insights.</li>
+                    <li>Produced data-driven reports with Excel and Tableau for policy/business decisions.</li>
+                    <li>Translated findings into phased recommendations for Taiwan's 2050 roadmap.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+          <a class="btn btn-primary resume-btn" href="assets/resume.pdf" target="_blank" rel="noopener"
+            >View Full Resume (PDF)</a
+          >
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container reveal">
+          <h2>Contact</h2>
+          <div class="contact-icons">
+            <a href="mailto:jeremy880524@gmail.com" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://github.com/jayChao2431" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tzu-chieh-chao2431/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Tzuchieh Chao. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

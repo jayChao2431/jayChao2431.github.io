@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio website for Data Science professional">
+    <title>Your Name - Data Science Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home">Your Name</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+                <h2>Data Science Master's Student</h2>
+                <p class="hero-description">
+                    Passionate about leveraging data to solve complex problems and drive insights.
+                    Currently seeking opportunities to apply machine learning and analytics skills.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a Data Science master's student with a strong foundation in statistical analysis, 
+                        machine learning, and data visualization. My academic journey has equipped me with 
+                        the skills to extract meaningful insights from complex datasets and build predictive models.
+                    </p>
+                    <p>
+                        With hands-on experience in Python, R, and SQL, I am committed to continuous learning 
+                        and staying updated with the latest advancements in data science and artificial intelligence. 
+                        I am actively seeking opportunities to contribute to innovative projects and grow as a 
+                        data professional.
+                    </p>
+                    <p>
+                        When I'm not working with data, I enjoy reading research papers, participating in 
+                        Kaggle competitions, and contributing to open-source projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Predictive Analytics for Customer Churn</h3>
+                    </div>
+                    <p class="project-description">
+                        Developed a machine learning model to predict customer churn with 89% accuracy 
+                        using Random Forest and XGBoost algorithms. Implemented feature engineering and 
+                        hyperparameter tuning to optimize model performance.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">Pandas</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Natural Language Processing for Sentiment Analysis</h3>
+                    </div>
+                    <p class="project-description">
+                        Built a sentiment analysis system for social media data using BERT and LSTM models. 
+                        Processed over 100,000 tweets and achieved 85% accuracy in classifying sentiments.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Sales Forecasting Dashboard</h3>
+                    </div>
+                    <p class="project-description">
+                        Created an interactive dashboard for sales forecasting using time series analysis. 
+                        Implemented ARIMA and Prophet models to predict future trends and visualized results 
+                        in Tableau.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">R</span>
+                        <span class="tag">Tableau</span>
+                        <span class="tag">Time Series</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Image Classification with Deep Learning</h3>
+                    </div>
+                    <p class="project-description">
+                        Developed a CNN-based image classifier for medical imaging data. Achieved 92% accuracy 
+                        in detecting anomalies using transfer learning with ResNet50.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Computer Vision</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">R</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Scikit-learn</span>
+                        <span class="skill-item">TensorFlow</span>
+                        <span class="skill-item">PyTorch</span>
+                        <span class="skill-item">XGBoost</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Data Analysis</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Pandas</span>
+                        <span class="skill-item">NumPy</span>
+                        <span class="skill-item">Matplotlib</span>
+                        <span class="skill-item">Seaborn</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Databases & Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">PostgreSQL</span>
+                        <span class="skill-item">MongoDB</span>
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">Docker</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Visualization</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Tableau</span>
+                        <span class="skill-item">Power BI</span>
+                        <span class="skill-item">Plotly</span>
+                        <span class="skill-item">D3.js</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Cloud & Big Data</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">AWS</span>
+                        <span class="skill-item">Azure</span>
+                        <span class="skill-item">Spark</span>
+                        <span class="skill-item">Hadoop</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+                <p>Download my resume to learn more about my experience and qualifications.</p>
+                <a href="resume.pdf" class="btn btn-primary" download>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 13L5 8H8V2H12V8H15L10 13Z" fill="currentColor"/>
+                        <path d="M2 16V18H18V16H2Z" fill="currentColor"/>
+                    </svg>
+                    Download Resume (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    I'm currently seeking opportunities in data science and machine learning. 
+                    Feel free to reach out if you'd like to connect!
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:your.email@example.com" class="contact-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="currentColor"/>
+                        </svg>
+                        <div class="contact-info">
+                            <h3>Email</h3>
+                            <p>your.email@example.com</p>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/jayChao2431" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12C2 16.42 4.865 20.17 8.839 21.49C9.339 21.58 9.521 21.27 9.521 21C9.521 20.77 9.513 20.14 9.508 19.31C6.726 19.91 6.139 17.77 6.139 17.77C5.685 16.61 5.029 16.3 5.029 16.3C4.121 15.68 5.098 15.69 5.098 15.69C6.101 15.76 6.629 16.73 6.629 16.73C7.521 18.28 8.97 17.84 9.539 17.58C9.631 16.93 9.889 16.49 10.175 16.24C7.955 16 5.62 15.13 5.62 11.52C5.62 10.43 6.01 9.54 6.649 8.85C6.546 8.59 6.203 7.55 6.747 6.15C6.747 6.15 7.586 5.88 9.497 7.17C10.31 6.95 11.16 6.84 12.01 6.84C12.85 6.84 13.7 6.95 14.517 7.17C16.427 5.88 17.264 6.15 17.264 6.15C17.809 7.55 17.466 8.59 17.363 8.85C18.004 9.54 18.39 10.43 18.39 11.52C18.39 15.14 16.051 15.99 13.821 16.24C14.179 16.56 14.505 17.19 14.505 18.15C14.505 19.52 14.493 20.62 14.493 21C14.493 21.27 14.673 21.58 15.179 21.49C19.165 20.16 22 16.41 22 12C22 6.477 17.523 2 12 2Z" fill="currentColor"/>
+                        </svg>
+                        <div class="contact-info">
+                            <h3>GitHub</h3>
+                            <p>github.com/jayChao2431</p>
+                        </div>
+                    </a>
+
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z" fill="currentColor"/>
+                        </svg>
+                        <div class="contact-info">
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/in/yourprofile</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

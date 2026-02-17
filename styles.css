@@ -585,6 +585,10 @@ h2 {
   color: var(--muted);
 }
 
+.expand-panel p + p {
+  margin-top: 0.45rem;
+}
+
 .expand-panel ul {
   margin: 0.55rem 0 0;
   padding-left: 1rem;
@@ -603,6 +607,16 @@ h2 {
 
 .resume-btn {
   margin-top: 1.2rem;
+}
+
+.cert-group {
+  margin-bottom: 1rem;
+}
+
+.cert-group-title {
+  margin: 0 0 0.65rem;
+  font-size: 1rem;
+  color: #1f3f77;
 }
 
 .contact-list {

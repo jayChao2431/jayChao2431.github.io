@@ -267,6 +267,10 @@ h2 {
   font-size: 1.02rem;
 }
 
+.hero .lead {
+  max-width: 60ch;
+}
+
 .hero-typing {
   margin: -0.2rem 0 0.9rem;
   font-family: "IBM Plex Mono", monospace;
@@ -300,6 +304,55 @@ h2 {
   gap: 0.75rem;
   flex-wrap: wrap;
   margin-top: 1.35rem;
+}
+
+.hero-signals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.hero-signals span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.38rem 0.72rem;
+  border-radius: 999px;
+  border: 1px solid rgba(27, 64, 128, 0.14);
+  background: rgba(255, 255, 255, 0.62);
+  color: var(--primary-dark);
+  font-size: 0.8rem;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1.1rem;
+}
+
+.hero-stat {
+  padding: 0.9rem 0.95rem;
+  border-radius: 18px;
+  border: 1px solid rgba(27, 64, 128, 0.12);
+  background: rgba(255, 255, 255, 0.54);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.48);
+}
+
+.hero-stat strong {
+  display: block;
+  font-size: 1.3rem;
+  line-height: 1;
+  color: var(--primary-dark);
+}
+
+.hero-stat span {
+  display: block;
+  margin-top: 0.4rem;
+  color: var(--muted);
+  font-size: 0.82rem;
 }
 
 .hero-social {
@@ -382,6 +435,11 @@ h2 {
   isolation: isolate;
 }
 
+.hero-card > * {
+  position: relative;
+  z-index: 1;
+}
+
 .hero-card::before,
 .card::before,
 .skill-group::before,
@@ -408,6 +466,15 @@ h2 {
   color: var(--muted);
 }
 
+.hero-card-kicker {
+  margin: 0 0 0.45rem;
+  font-size: 0.75rem;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--primary);
+}
+
 .focus-chips {
   display: flex;
   flex-wrap: wrap;
@@ -431,6 +498,10 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.8rem;
+}
+
+.focus-details-stack {
+  margin-top: 1.1rem;
 }
 
 .focus-details > div {
@@ -462,6 +533,32 @@ h2 {
   margin: 0.15rem 0;
 }
 
+.focus-metrics {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.focus-metrics > div {
+  padding: 0.85rem 0.9rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 14px 14px 0;
+  background: rgba(255, 255, 255, 0.54);
+}
+
+.focus-metrics strong {
+  display: block;
+  color: var(--primary-dark);
+  font-size: 0.95rem;
+}
+
+.focus-metrics span {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
 .scroll-cue {
   margin: 1rem 0 0;
   text-align: center;
@@ -471,6 +568,38 @@ h2 {
   letter-spacing: 0.14em;
   color: #62728a;
   animation: float-cue 2.2s ease-in-out infinite;
+}
+
+.proof-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-bottom: 1.4rem;
+}
+
+.proof-item {
+  padding: 0.95rem 1rem;
+  border-radius: 18px;
+  border: 1px solid rgba(27, 64, 128, 0.12);
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: var(--shadow);
+}
+
+.proof-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--primary);
+  font-size: 0.74rem;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.proof-item strong {
+  display: block;
+  color: var(--primary-dark);
+  font-size: 0.96rem;
+  line-height: 1.35;
 }
 
 @keyframes float-cue {
@@ -500,7 +629,7 @@ h2 {
 }
 
 .card {
-  padding: 1.15rem;
+  padding: 1.2rem;
   position: relative;
   overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -511,31 +640,80 @@ h2 {
   box-shadow: 0 22px 36px rgba(8, 31, 79, 0.12);
 }
 
+.card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.project-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
 .project-icon {
-  margin: 0 0 0.45rem;
+  margin: 0;
   color: var(--primary-dark);
   font-size: 1.05rem;
 }
 
-.tagline {
-  margin: 0.8rem 0 0.4rem;
-  color: var(--muted);
-  font-weight: 600;
+.project-label {
+  margin: 0;
+  font-size: 0.74rem;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--primary);
 }
 
-.outcome {
-  margin: 0;
-  color: #163766;
+.project-stack {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-weight: 600;
   font-size: 0.9rem;
+}
+
+.project-breakdown {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.project-breakdown > div {
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(27, 64, 128, 0.1);
+}
+
+.project-breakdown p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.project-meta-label {
+  margin-bottom: 0.3rem !important;
+  color: var(--primary-dark) !important;
+  font-size: 0.76rem;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
   font-weight: 600;
 }
 
 .card a {
-  display: inline-block;
-  margin-top: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 1rem;
   font-weight: 700;
   color: var(--primary-dark);
   text-decoration: none;
+}
+
+.card a::after {
+  content: "↗";
+  font-size: 0.95rem;
 }
 
 .card a:hover {
@@ -591,6 +769,24 @@ h2 {
   font-size: 1.05rem;
 }
 
+.resume-column {
+  position: relative;
+}
+
+.resume-column-experience {
+  padding-left: 1.15rem;
+}
+
+.resume-column-experience::before {
+  content: "";
+  position: absolute;
+  top: 2.15rem;
+  bottom: 0.8rem;
+  left: 0.22rem;
+  width: 1px;
+  background: linear-gradient(180deg, rgba(17, 199, 243, 0.35), rgba(13, 47, 111, 0.12));
+}
+
 .resume-card {
   margin-bottom: 0.75rem;
   background: var(--surface);
@@ -605,6 +801,18 @@ h2 {
 .resume-card.open {
   border-color: rgba(17, 199, 243, 0.28);
   box-shadow: 0 20px 34px rgba(8, 31, 79, 0.12);
+}
+
+.resume-card-timeline::after {
+  content: "";
+  position: absolute;
+  left: -1.02rem;
+  top: 1.2rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--primary));
+  box-shadow: 0 0 0 6px rgba(17, 199, 243, 0.08);
 }
 
 .expand-toggle {
@@ -622,11 +830,35 @@ h2 {
   cursor: pointer;
 }
 
+.resume-heading {
+  display: block;
+}
+
 .expand-toggle strong {
   display: block;
-  margin-top: 0.24rem;
-  font-size: 0.96rem;
-  line-height: 1.35;
+  margin-top: 0.18rem;
+  font-size: 1rem;
+  line-height: 1.32;
+}
+
+.resume-org,
+.resume-summary {
+  display: block;
+}
+
+.resume-org {
+  margin-top: 0.34rem;
+  color: var(--primary);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.resume-summary {
+  margin-top: 0.52rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  max-width: 58ch;
 }
 
 .expand-icon {
@@ -754,10 +986,15 @@ h2 {
 }
 
 @media (max-width: 960px) {
+  .proof-strip,
   .hero-grid,
   .project-grid,
   .skills-grid,
   .resume-split {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stats {
     grid-template-columns: 1fr;
   }
 
@@ -771,6 +1008,14 @@ h2 {
 
   .hero {
     padding-top: 4.8rem;
+  }
+
+  .resume-column-experience {
+    padding-left: 0.9rem;
+  }
+
+  .resume-card-timeline::after {
+    left: -0.84rem;
   }
 }
 
@@ -798,6 +1043,14 @@ h2 {
   .hero-actions .btn {
     width: 100%;
     text-align: center;
+  }
+
+  .hero-signals {
+    flex-direction: column;
+  }
+
+  .hero-signals span {
+    width: 100%;
   }
 
   .hero-social {
